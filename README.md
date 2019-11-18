@@ -25,8 +25,9 @@ Inference can be made with
 
 ```Shell
 ./tools/test_net.py --gpu 1 --def models/googlenet_rgb_depth_gating_All_Dropout/deploy.prototxt \
-	--net googlenet_rgb_depth_gating_All_Dropout/googlenet_rgb_depth_gating_iter_2500.caffemodel --cfg experiments/cfgs/day_night.yml ```
-
+	--net models/googlenet_rgb_depth_gating_All_Dropout/googlenet_rgb_depth_gating_iter_2500.caffemodel \
+        --cfg experiments/cfgs/day_night.yml
+```
 
 ## Dataset
 Our  InOutDoorPeople dataset containing 8305 annotated frames of RGB and Depth data can be found at 
