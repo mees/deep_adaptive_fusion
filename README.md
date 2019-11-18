@@ -19,7 +19,7 @@ If you find the code helpful please consider citing our work
 Please refer to [INSTALL.md](INSTALL.md) for setup instructions. The code was tested on Ubuntu 14.04. 
 The gating layer implementing the adaptive fusion scheme can be found at [gating_inner_product_layer.cpp](caffe-fast-rcnn/src/caffe/layers/gating_inner_product_layer.cpp) and [gating_inner_product_layer.cu](caffe-fast-rcnn/src/caffe/layers/gating_inner_product_layer.cu)
 
-## Models
+## Inference
 We provide several models from the paper. A RGB-D gating network trained on the InOutDoorPeople dataset is available at [googlenet_rgb_depth_gating_iter_2500.caffemodel](models/googlenet_rgb_depth_gating/googlenet_rgb_depth_gating_iter_2500.caffemodel). 
 Inference can be made with
 
@@ -29,6 +29,7 @@ Inference can be made with
         --cfg experiments/cfgs/day_night.yml
 ```
 
+## Training
 The gating network, i.e. learning how to combine best the convolutional neural networks trained on the RGB and Depth modalities, can be trained with the following command
 ```Shell
 ./tools/train_net.py --gpu 1 --solver models/googlenet_rgb_depth_gating/solver.prototxt  \
@@ -36,6 +37,8 @@ The gating network, i.e. learning how to combine best the convolutional neural n
 --rand --cfg experiments/cfgs/day_night.yml --iters 10000  2>&1 | tee /tmp/caffe_google_fus.log.$(date +%Y%m%d-%H%M)
 ```
 We merged the two separately trained [RGB](models/googlenet_xss_finetune/googlenet_xss_finetune2_iter_70000.caffemodel) and [Depth](models/depth-google-xxs/googlenet_xss_iter_70000.caffemodel)  deep experts based on the GoogLeNet-xxs architecture into a single model [googLeNet_fus.caffemodel](models/googlenet_rgb_depth_gating/googLeNet_fus.caffemodel) in order to train then the adaptive weighting.
+
+##Evaluation
 
 ## Dataset
 Our  InOutDoorPeople dataset containing 8305 annotated frames of RGB and Depth data can be found [here](http://adaptivefusion.cs.uni-freiburg.de/#dataset)
