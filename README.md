@@ -38,3 +38,6 @@ The gating network, i.e. learning how to combine best the convolutional neural n
 
 ## Dataset
 Our  InOutDoorPeople dataset containing 8305 annotated frames of RGB and Depth data can be found [here](http://adaptivefusion.cs.uni-freiburg.de/#dataset)
+
+## License
+For academic usage, the code is released under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) license. For any commercial purpose, please contact the authors.
