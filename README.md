@@ -1,6 +1,6 @@
 # Choosing Smartly: Adaptive Multimodal Fusion for Object Detection in Changing Environments
 
-This is the code implementing an adaptive gating sensor fusion approach for object detection based on a mixture of convolutional neural networks. More information at our project page ```http://adaptivefusion.cs.uni-freiburg.de```
+This is the code implementing an adaptive gating sensor fusion approach for object detection based on a mixture of convolutional neural networks. More information at our [project page](http://adaptivefusion.cs.uni-freiburg.de)
 
 ## Reference
 If you find the code helpful please consider citing our work 
