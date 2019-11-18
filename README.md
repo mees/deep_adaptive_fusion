@@ -20,13 +20,18 @@ Please refer to [INSTALL.md](INSTALL.md) for setup instructions. The code was te
 The gating layer implementing the adaptive fusion scheme can be found at [gating_inner_product_layer.cpp](caffe-fast-rcnn/src/caffe/layers/gating_inner_product_layer.cpp) and [gating_inner_product_layer.cu](caffe-fast-rcnn/src/caffe/layers/gating_inner_product_layer.cu)
 
 ## Models
-We provide several models from the paper. A RGB-D gating network trained on the InOutDoorPeople dataset is available at [googlenet_rgb_depth_gating_iter_2500.caffemodel](models/googlenet_rgb_depth_gating_All_Dropout/googlenet_rgb_depth_gating_iter_2500.caffemodel). 
+We provide several models from the paper. A RGB-D gating network trained on the InOutDoorPeople dataset is available at [googlenet_rgb_depth_gating_iter_2500.caffemodel](models/googlenet_rgb_depth_gating/googlenet_rgb_depth_gating_iter_2500.caffemodel). 
 Inference can be made with
 
 ```Shell
-./tools/test_net.py --gpu 1 --def models/googlenet_rgb_depth_gating_All_Dropout/deploy.prototxt \
-	--net models/googlenet_rgb_depth_gating_All_Dropout/googlenet_rgb_depth_gating_iter_2500.caffemodel \
+./tools/test_net.py --gpu 1 --def models/googlenet_rgb_depth_gating/deploy.prototxt \
+	--net models/googlenet_rgb_depth_gating/googlenet_rgb_depth_gating_iter_2500.caffemodel \
         --cfg experiments/cfgs/day_night.yml
+```
+
+The gating network, i.e. how to combine best the convolutional neural networks trained on the RGB and Depth modalities, can be trained with the following command
+```Shell
+./tools/train_net.py --gpu 1 --solver models/googlenet_rgb_depth_gating/solver.prototxt --weights models/googlenet_rgb_depth_gating/googLeNet_fus.caffemodel --imdb inria_train --rand --cfg experiments/cfgs/day_night.yml --iters 10000  2>&1 | tee /tmp/caffe_google_fus.log.$(date +%Y%m%d-%H%M)
 ```
 
 ## Dataset
