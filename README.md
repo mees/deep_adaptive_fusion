@@ -38,7 +38,8 @@ The gating network, i.e. learning how to combine best the convolutional neural n
 ```
 We merged the two separately trained [RGB](models/googlenet_xss_finetune/googlenet_xss_finetune2_iter_70000.caffemodel) and [Depth](models/depth-google-xxs/googlenet_xss_iter_70000.caffemodel)  deep experts based on the GoogLeNet-xxs architecture into a single model [googLeNet_fus.caffemodel](models/googlenet_rgb_depth_gating/googLeNet_fus.caffemodel) in order to train then the adaptive weighting.
 
-##Evaluation
+## Evaluation
+We provide a script to [evaluate](eval/eval.py) the detections for our InOutDoorPeople dataset 
 
 ## Dataset
 Our  InOutDoorPeople dataset containing 8305 annotated frames of RGB and Depth data can be found [here](http://adaptivefusion.cs.uni-freiburg.de/#dataset)
