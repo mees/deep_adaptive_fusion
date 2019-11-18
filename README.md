@@ -20,7 +20,7 @@ Please refer to [INSTALL.md](INSTALL.md) for setup instructions. The code was te
 The gating layer implementing the adaptive fusion scheme can be found at [gating_inner_product_layer.cpp](caffe-fast-rcnn/src/caffe/layers/gating_inner_product_layer.cpp) and [gating_inner_product_layer.cu](caffe-fast-rcnn/src/caffe/layers/gating_inner_product_layer.cu)
 
 ## Models
-We provide several models from the paper. A RGB-D gating network trained on the InOutDoorPeople dataset is available at ```models/googlenet_rgb_depth_gating_All_Dropout/googlenet_rgb_depth_gating_iter_2500.caffemodel```. 
+We provide several models from the paper. A RGB-D gating network trained on the InOutDoorPeople dataset is available at [googlenet_rgb_depth_gating_iter_2500.caffemodel](models/googlenet_rgb_depth_gating_All_Dropout/googlenet_rgb_depth_gating_iter_2500.caffemodel). 
 Inference can be made with
 
 ```Shell
