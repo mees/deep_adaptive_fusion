@@ -29,9 +29,11 @@ Inference can be made with
         --cfg experiments/cfgs/day_night.yml
 ```
 
-The gating network, i.e. how to combine best the convolutional neural networks trained on the RGB and Depth modalities, can be trained with the following command
+The gating network, i.e. learning how to combine best the convolutional neural networks trained on the RGB and Depth modalities, can be trained with the following command
 ```Shell
-./tools/train_net.py --gpu 1 --solver models/googlenet_rgb_depth_gating/solver.prototxt --weights models/googlenet_rgb_depth_gating/googLeNet_fus.caffemodel --imdb inria_train --rand --cfg experiments/cfgs/day_night.yml --iters 10000  2>&1 | tee /tmp/caffe_google_fus.log.$(date +%Y%m%d-%H%M)
+./tools/train_net.py --gpu 1 --solver models/googlenet_rgb_depth_gating/solver.prototxt  \
+--weights models/googlenet_rgb_depth_gating/googLeNet_fus.caffemodel --imdb inria_train \
+--rand --cfg experiments/cfgs/day_night.yml --iters 10000  2>&1 | tee /tmp/caffe_google_fus.log.$(date +%Y%m%d-%H%M)
 ```
 
 ## Dataset
