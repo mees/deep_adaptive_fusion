@@ -30,6 +30,4 @@ Inference can be made with
 ```
 
 ## Dataset
-Our  InOutDoorPeople dataset containing 8305 annotated frames of RGB and Depth data can be found at 
-
-```http://adaptivefusion.cs.uni-freiburg.de/#dataset```
+Our  InOutDoorPeople dataset containing 8305 annotated frames of RGB and Depth data can be found [here](http://adaptivefusion.cs.uni-freiburg.de/#dataset)
