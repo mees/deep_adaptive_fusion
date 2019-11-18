@@ -1,0 +1,3 @@
+EXP_DIR: no_flip
+TRAIN:
+    USE_FLIPPED: False

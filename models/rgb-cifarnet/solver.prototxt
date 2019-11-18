@@ -1,0 +1,18 @@
+train_net: "models/CifarNet_orig/train.prototxt"
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 60000
+max_iter: 70000
+display: 20
+average_loss: 100
+# iter_size: 1
+momentum: 0.9
+weight_decay: 0.004
+# We disable standard caffe solver snapshotting and implement our own snapshot
+# function
+snapshot: 0
+# We still use the snapshot prefix, though
+#snapshot_prefix: "output/default/train/vgg16_fast_rcnn"
+snapshot_prefix: "/sysgen/dsets/day_night_people/caffe_models/cache/CifarNet_fast_rcnn"
+#debug_info: true

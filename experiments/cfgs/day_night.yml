@@ -1,0 +1,14 @@
+EXP_DIR: day_night
+# We don't remove duplicate featuer ROIs, to have the exact number of proposals in the gating network for evaluation
+DEDUP_BOXES: 0.0
+TRAIN:
+    USE_FLIPPED: False
+    BG_THRESH_HI: 0.4
+    BG_THRESH_LO: 0.0
+    FG_THRESH: 0.6
+    SNAPSHOT_ITERS: 500 
+    BBOX_REG: False
+    BG_NORANDOM_SAMPLING: True
+    #FG_FRACTION: 1.0
+TEST:
+    BBOX_REG: True

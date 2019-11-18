@@ -1,0 +1,12 @@
+net: "models/googlenet_xss_finetune/train_val.prototxt"
+display: 40
+average_loss: 40
+base_lr: 0.001
+lr_policy: "step"
+stepsize: 30000
+gamma: 0.96
+momentum: 0.9
+weight_decay: 0.0002
+snapshot: 40000
+snapshot_prefix: "/sysgen/dsets/day_night_people/caffe_models/cache_oier/googlenet_xss_finetune2"
+solver_mode: GPU

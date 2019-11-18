@@ -1,0 +1,11 @@
+EXP_DIR: mensa
+TRAIN:
+    USE_FLIPPED: False
+    BG_THRESH_HI: 0.4
+    BG_THRESH_LO: 0.0
+    FG_THRESH: 0.6
+    SNAPSHOT_ITERS: 2000 
+    BBOX_REG: False
+TEST:
+    BBOX_REG: False
+

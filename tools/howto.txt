@@ -1,0 +1,2 @@
+python compare_netlayers.py ~/code/ais_fast_rcnn_depth/models/googlenet_xss/deploy.prototxt ~/code/ais_fast_rcnn_MoDE/models/googlenet_rgb_depth_gating/deploy.prototxt ~/code/combine_nets_GoogLeNet/right/s00_right.caffemodel ../../combine_nets_GoogLeNet/googLeNet-fus2.caffemodel 
+

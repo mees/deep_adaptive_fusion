@@ -1,0 +1,11 @@
+net: "models/googlenet_rgb_depth_gating_All_Dropout/train_val.prototxt"
+display: 40
+average_loss: 40
+base_lr: 0.001
+lr_policy: "step"
+stepsize: 30000
+gamma: 0.96
+momentum: 0.9
+weight_decay: 0.0002
+snapshot_prefix: "/sysgen/dsets/day_night_people/caffe_models/cache_gating/googlenet_rgb_depth_gating"
+solver_mode: GPU
