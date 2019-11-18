@@ -23,7 +23,7 @@ The gating layer implementing the adaptive fusion scheme can be found at ```caff
 We provide several models from the paper. A RGB-D gating network trained on the InOutDoorPeople dataset is available at ```models/googlenet_rgb_depth_gating_All_Dropout/googlenet_rgb_depth_gating_iter_2500.caffemodel```. 
 Inference can be made with
 
-``` ./tools/test_net.py --gpu 1 --def models/googlenet_rgb_depth_gating_All_Dropout/deploy.prototxt \
+``` ./tools/test_net.py --gpu 1 --def models/googlenet_rgb_depth_gating_All_Dropout/deploy.prototxt 
 	--net googlenet_rgb_depth_gating_All_Dropout/googlenet_rgb_depth_gating_iter_2500.caffemodel --cfg experiments/cfgs/day_night.yml ```
 
 
