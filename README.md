@@ -20,10 +20,14 @@ Please refer to [INSTALL.md](INSTALL.md) for setup instructions. The code was te
 The gating layer implementing the adaptive fusion scheme can be found at ```caffe-fast-rcnn/src/caffe/layers/gating_inner_product_layer.cpp and gating_inner_product_layer.cu ```
 
 ## Models
-We provide several models from the paper. A RGB-D gating network trained on the InOutDoorPeople dataset is available at ```models/googlenet_rgb_depth_gating_All_Dropout/googlenet_rgb_depth_gating_iter_2500.caffemodel```. Inference can be made with
-```./tools/test_net.py --gpu 1 --def models/googlenet_rgb_depth_gating_All_Dropout/deploy.prototxt \
-	--net googlenet_rgb_depth_gating_All_Dropout/googlenet_rgb_depth_gating_iter_2500.caffemodel --cfg experiments/cfgs/day_night.yml```
+We provide several models from the paper. A RGB-D gating network trained on the InOutDoorPeople dataset is available at ```models/googlenet_rgb_depth_gating_All_Dropout/googlenet_rgb_depth_gating_iter_2500.caffemodel```. 
+Inference can be made with
+
+``` ./tools/test_net.py --gpu 1 --def models/googlenet_rgb_depth_gating_All_Dropout/deploy.prototxt \
+	--net googlenet_rgb_depth_gating_All_Dropout/googlenet_rgb_depth_gating_iter_2500.caffemodel --cfg experiments/cfgs/day_night.yml ```
 
 
 ## Dataset
-Our  InOutDoorPeople dataset containing 8305 annotated frames of RGB and Depth data can be found at ```http://adaptivefusion.cs.uni-freiburg.de/#dataset```
+Our  InOutDoorPeople dataset containing 8305 annotated frames of RGB and Depth data can be found at 
+
+```http://adaptivefusion.cs.uni-freiburg.de/#dataset```
