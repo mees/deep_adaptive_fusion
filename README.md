@@ -21,7 +21,6 @@ The gating layer implementing the adaptive fusion scheme can be found at [gating
 
 ## Inference
 We provide several models from the paper. A RGB-D gating network trained on the InOutDoorPeople dataset is available at [googlenet_rgb_depth_gating_iter_2500.caffemodel](models/googlenet_rgb_depth_gating/googlenet_rgb_depth_gating_iter_2500.caffemodel). 
-
 Inference can be made with:
 
 ```Shell
@@ -47,6 +46,7 @@ Our  InOutDoorPeople dataset containing 8305 annotated frames of RGB and Depth d
 
 ## Notes
 If you want to integrate our multimodal mixture of deep experts into a semantic segmentation task, check out the following [repo](https://github.com/DeepSceneSeg/CMoDE).
+
 If you want to implement our approach with a different network architecture you should take a look at the fusion layers in our [reference implementation](https://github.com/mees/deep_adaptive_fusion/blob/master/models/googlenet_rgb_depth_gating/train_val.prototxt#L2468).
 
 ## License
