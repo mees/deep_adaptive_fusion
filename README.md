@@ -50,4 +50,4 @@ If you want to integrate our multimodal mixture of deep experts into a semantic 
 If you want to implement our approach with a different network architecture you should take a look at the fusion layers in our [reference implementation](https://github.com/mees/deep_adaptive_fusion/blob/master/models/googlenet_rgb_depth_gating/train_val.prototxt#L2468).
 
 ## License
-For academic usage, the code is released under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) license. For any commercial purpose, please contact the authors.
+For academic usage, the code related to the gating layers, our caffe models and utility scripts are released under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) license. For any commercial purpose, please contact the authors. For Fast-RCNN and Caffe see their respective licenses.
