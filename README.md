@@ -44,6 +44,10 @@ We provide a script to [evaluate](eval/eval.py) the detections for our InOutDoor
 ## Dataset
 Our  InOutDoorPeople dataset containing 8305 annotated frames of RGB and Depth data can be found [here](http://adaptivefusion.cs.uni-freiburg.de/#dataset).
 
+<p align="center">
+  <img src="http://adaptivefusion.cs.uni-freiburg.de/images/timeline_imgs.png" width="75%"/>
+</p>
+
 ## Notes
 If you want to integrate our multimodal mixture of deep experts into a semantic segmentation task, check out the following [repo](https://github.com/DeepSceneSeg/CMoDE).
 
