@@ -2,6 +2,10 @@
 
 This is the code implementing an adaptive gating sensor fusion approach for object detection based on a mixture of convolutional neural networks. Our approach learns how to best combine different sensor modalities to handle sensor noise induced by dynamic environments such as lighting changes, out of range readings in the depth sensor and motion blur among others. More information at our [project page](http://adaptivefusion.cs.uni-freiburg.de).
 
+<p align="center">
+  <img src="http://adaptivefusion.cs.uni-freiburg.de/images/gating_arch.png" width="75%"/>
+</p>
+
 ## Reference
 If you find the code helpful please consider citing our work 
 ```
