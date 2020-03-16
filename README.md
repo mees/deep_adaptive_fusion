@@ -3,7 +3,7 @@
 This is the code implementing an adaptive gating sensor fusion approach for object detection based on a mixture of convolutional neural networks. Our approach learns how to best combine different sensor modalities to handle sensor noise induced by dynamic environments such as lighting changes, out of range readings in the depth sensor and motion blur among others. More information at our [project page](http://adaptivefusion.cs.uni-freiburg.de).
 
 <p align="center">
-  <img src="http://adaptivefusion.cs.uni-freiburg.de/images/gating_arch.png" width="75%"/>
+  <img src="http://adaptivefusion.cs.uni-freiburg.de/static/images/gating_arch.png" width="75%"/>
 </p>
 
 ## Reference
@@ -49,7 +49,7 @@ We provide a script to [evaluate](eval/eval.py) the detections for our InOutDoor
 Our  InOutDoorPeople dataset containing 8305 annotated frames of RGB and Depth data can be found [here](http://adaptivefusion.cs.uni-freiburg.de/#dataset).
 
 <p align="center">
-  <img src="http://adaptivefusion.cs.uni-freiburg.de/images/timeline_imgs.png" width="75%"/>
+  <img src="http://adaptivefusion.cs.uni-freiburg.de/static/images/timeline_imgs.png" width="75%"/>
 </p>
 
 ## Notes
