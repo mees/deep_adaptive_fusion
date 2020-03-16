@@ -15,7 +15,7 @@ If you find the code helpful please consider citing our work
   booktitle = {Proceedings of the International Conference on Intelligent Robots and Systems (IROS)},
   year = 2016,
   address = {Daejeon, South Korea},
-  url = {http://ais.informatik.uni-freiburg.de/publications/papers/mees16iros.pdf},
+  url = {http://ais.informatik.uni-freiburg.de/publications/papers/mees16iros.pdf}
 }
 ```
 
